@@ -5,6 +5,7 @@ import speech_recognition as sr
 import PIL
 from PIL import Image
 
+# speech_recognition 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 
