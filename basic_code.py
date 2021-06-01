@@ -49,7 +49,7 @@ def Greetings():
     speak("I am Friday. Please, tell me how may I help you today?")       
     
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     Greetings()
     while True :
     
@@ -57,51 +57,64 @@ if _name_ == "_main_":
         
         if 'on air conditioner' in query:
             speak("Showing Switched On Air Conditioner.")
-            im = Image.open(r"C:\Users\panis\Downloads\AC.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\AC.jpg")
             im.show()
         
         
         elif 'off air conditioner' in query:
             speak("Showing Switched Off Air Conditioner.")
-            im = Image.open(r"C:\Users\panis\Downloads\AC_OFF.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\AC_OFF.jpg")
             im.show()
 
         
         elif 'on television' in query:
             speak("Showing Switched On Television.")
-            im = Image.open(r"C:\Users\panis\Downloads\TV.jpeg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\TV.jpeg")
             im.show()
 
         
         elif 'off television' in query:
             speak("Showing Switched Off Television.")
-            im = Image.open(r"C:\Users\panis\Downloads\TV_OFF.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\TV_OFF.jpg")
             im.show()
 
             
         elif 'on ceiling fan' in query:
             speak("Showing Switched On Ceiling Fan.")
-            im = Image.open(r"C:\Users\panis\Downloads\FAN_ON.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\FAN_ON.jpg")
             im.show()
             
             
         elif 'off ceiling fan' in query:
             speak("Showing Switched Off Ceiling Fan.")
-            im = Image.open(r"C:\Users\panis\Downloads\FAN.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\FAN.jpg")
             im.show()
 
 
         elif 'on light' in query:
             speak("Showing Switched On Lights.")
-            im = Image.open(r"C:\Users\panis\Downloads\LIGHT.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\LIGHT.jpg")
             im.show()
             
         elif 'off light' in query:
             speak("Showing Switched Off Lights.")
-            im = Image.open(r"C:\Users\panis\Downloads\LIGHT_OFF.jpg")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\LIGHT_OFF.jpg")
+            im.show()
+            
+            
+        elif 'on all appliances' in query:
+            speak("Showing Switched On All Appliances.")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\ALL_ON.jpeg")
+            im.show()
+            
+            
+        elif 'off all appliances' in query:
+            speak("Showing Switched Off All Appliances.")
+            im = Image.open(r"C:\Users\panis\OneDrive\Desktop\Mini_Project\ALL_OFF.jpeg")
             im.show()
 
                 
         elif 'bye' in query or 'quit' in query :
             speak("Thank you. Have a nice day!")
-            break
+            break 
+            
